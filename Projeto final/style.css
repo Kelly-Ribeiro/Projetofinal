@@ -1,0 +1,77 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image:url(src/imagens/tamoatoaLogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-color: #3c3636;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .menu{
+      /*Realiza quebra de linha  e coloca itens em uma linha só(lado a lado)*/
+      display: inline-block;
+      background: #807575;
+      position: sticky;/*deixa o menu fixo na tela */
+      top: 0;
+
+  }
+ .menu a{
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  border: 2px solid;
+
+ }
+  #barraNavegacao{
+      /*Quando um elemento atinge um limite de rolagem, o elemento fica fixo na posição*/
+      position: sticky;
+      top:0;
+      /*Remove os marcadoresda lista*/
+      list-style-type: none;
+      margin:0;/*Remove o espaço ao redor*/
+      padding: 0;/*Remove o preenchimento do elemento*/
+      overflow: hidden;/*Esconde o conteúdo que for maior que o tamanho da borda*/
+      background-color: rgb(200, 192, 192);
+      height: 50px;
+      width:100%;
+      z-index: 1000;
+      
+    }
+  li a{
+      /*Faz a exibição como um bloco*/
+      display: inline-block;
+      color:rgb(23, 23, 23);
+      text-align: center;
+      padding: 15px 15px;
+      text-decoration: none;/*retire o sublinhado do link */
+      width: auto;
+
+  }
+  /*Deixar o bloco onde curso está em cima de cor diferente */
+  li a:hover{
+      background-color: #6d675e;
+      color:rgb(12, 12, 12);
+      text-decoration: none;/*retire o sublinhado do link */
+  }
+
+  
